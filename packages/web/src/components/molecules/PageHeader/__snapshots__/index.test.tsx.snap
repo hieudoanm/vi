@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader render default 1`] = `
+<div>
+  <div
+    class="py-12 border-b"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="flex justify-between items-center"
+      >
+        <h1
+          class="text-4xl uppercase"
+        />
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;

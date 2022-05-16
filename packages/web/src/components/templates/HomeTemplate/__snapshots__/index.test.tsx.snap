@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeTemplate render default 1`] = `
+<div>
+  <nav
+    class="md:py-6 py-4 w-full fixed z-10 bg-cyan-50 transition-all css-m0z1ly"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="flex justify-between items-center"
+      >
+        <div
+          class="font-extrabold tracking-widest text-black"
+        >
+          VI
+        </div>
+      </div>
+    </div>
+  </nav>
+  <section
+    class="bg-cyan-50 pt-40 pb-20 css-9ccuu8"
+    id="hero"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-5 gap-8"
+      >
+        <div
+          class="col-span-3"
+        >
+          <p
+            class="mb-4 text-blue-500 font-medium"
+          >
+            Personal Finance
+          </p>
+          <h1
+            class="mx-auto mb-8 text-4xl font-bold"
+          >
+            All your money,
+            <br />
+            one account
+          </h1>
+          <h3
+            class="mb-8 text-2xl"
+          >
+            We're building next generation personal finance tools. Sign up to get early access.
+          </h3>
+          <form>
+            <div
+              class="flex gap-8 mb-8"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root bg-white border border-blue-500 css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+              >
+                <label
+                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-required css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="false"
+                  for="email"
+                  id="email-label"
+                >
+                  Email
+                  <span
+                    aria-hidden="true"
+                    class="MuiInputLabel-asterisk MuiFormLabel-asterisk css-wgai2y-MuiFormLabel-asterisk"
+                  >
+                     
+                    *
+                  </span>
+                </label>
+                <div
+                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    id="email"
+                    placeholder="Email"
+                    required=""
+                    type="email"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="css-1ftyaf0"
+                    >
+                      <span>
+                        Email
+                         
+                        *
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Early Access
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </form>
+          <p>
+            Already have a beta account?
+             
+            <span
+              class="underline text-blue-500 cursor-pointer"
+              href="/api/auth/login"
+            >
+              Sign in
+            </span>
+          </p>
+        </div>
+        <div
+          class="col-span-2"
+        >
+          <div
+            class="hidden md:block"
+          >
+            <div
+              class="w-full bg-cover css-1pjj8rt"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="py-20"
+    id="features"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <p
+        class="text-center mb-3 text-blue-500 font-medium"
+      >
+        Features
+      </p>
+      <h1
+        class="text-center mx-auto mb-8 text-4xl font-bold"
+      >
+        Smart money management
+      </h1>
+      <div
+        class="max-w-2xl mx-auto"
+      >
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-10"
+        />
+      </div>
+    </div>
+  </section>
+  <section
+    class="bg-cyan-50 py-20 css-9ptmzd"
+  >
+    <div
+      class="flex flex-col justify-center items-center pt-20 pb-10"
+    >
+      <h1
+        class="text-center mx-auto mb-8 text-4xl font-bold"
+      >
+        Be the first to get the beta
+      </h1>
+      <a
+        class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-jh47zj-MuiButtonBase-root-MuiButton-root"
+        href="/api/auth/login"
+        tabindex="0"
+        type="button"
+      >
+        Get early access
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </a>
+      <p
+        class="text-sm font-light pt-4"
+      >
+        No credit card required.
+      </p>
+    </div>
+  </section>
+  <footer
+    class="bg-white py-20"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="grid grid-cols-4 gap-8"
+      />
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg pt-12 css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="font-extrabold tracking-widest"
+      >
+        VI
+      </div>
+    </div>
+  </footer>
+</div>
+`;

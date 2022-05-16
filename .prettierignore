@@ -1,0 +1,8 @@
+# folders
+coverage
+dist
+node_modules
+
+# files
+src/routes.ts
+src/swagger.json

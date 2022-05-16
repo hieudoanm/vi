@@ -1,0 +1,35 @@
+{
+  "name": "vi",
+  "version": "0.0.1",
+  "description": "VI",
+  "main": "index.js",
+  "repository": "git@github.com:hieudoanm/vi.git",
+  "author": "hieudoanm <hieumdoan@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build:api": "yarn workspace api build",
+    "build:web": "yarn workspace web build",
+    "build": "yarn build:api && yarn build:web",
+    "dev:api": "yarn workspace api dev",
+    "dev:web": "yarn workspace web dev",
+    "dev": "concurrently --kill-others-on-fail \"yarn dev:api\" \"yarn dev:web\"",
+    "lint:api": "yarn workspace api lint",
+    "lint:web": "yarn workspace web lint",
+    "lint": "yarn lint:api && yarn lint:web",
+    "test:api": "yarn workspace api test",
+    "test:web": "yarn workspace web test",
+    "test": "yarn test:api && yarn test:web"
+  },
+  "dependencies": {
+    "concurrently": "^7.2.0"
+  },
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}

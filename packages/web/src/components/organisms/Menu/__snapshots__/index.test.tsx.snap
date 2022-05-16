@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu render default 1`] = `
+<div>
+  <div
+    class="border rounded-lg overflow-hidden"
+  >
+    <div
+      class="grid grid-cols-1 md:grid-cols-2"
+    />
+  </div>
+</div>
+`;

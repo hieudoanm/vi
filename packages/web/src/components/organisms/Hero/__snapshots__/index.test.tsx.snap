@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero render default 1`] = `
+<div>
+  <section
+    class="bg-cyan-50 pt-40 pb-20 css-9ccuu8"
+    id="hero"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="grid grid-cols-1 md:grid-cols-5 gap-8"
+      >
+        <div
+          class="col-span-3"
+        >
+          <p
+            class="mb-4 text-blue-500 font-medium"
+          >
+            Personal Finance
+          </p>
+          <h1
+            class="mx-auto mb-8 text-4xl font-bold"
+          >
+            All your money,
+            <br />
+            one account
+          </h1>
+          <h3
+            class="mb-8 text-2xl"
+          >
+            We're building next generation personal finance tools. Sign up to get early access.
+          </h3>
+          <form>
+            <div
+              class="flex gap-8 mb-8"
+            >
+              <div
+                class="MuiFormControl-root MuiTextField-root bg-white border border-blue-500 css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+              >
+                <label
+                  class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-required css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
+                  data-shrink="false"
+                  for="email"
+                  id="email-label"
+                >
+                  Email
+                  <span
+                    aria-hidden="true"
+                    class="MuiInputLabel-asterisk MuiFormLabel-asterisk css-wgai2y-MuiFormLabel-asterisk"
+                  >
+                     
+                    *
+                  </span>
+                </label>
+                <div
+                  class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+                >
+                  <input
+                    aria-invalid="false"
+                    class="MuiOutlinedInput-input MuiInputBase-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                    id="email"
+                    placeholder="Email"
+                    required=""
+                    type="email"
+                    value=""
+                  />
+                  <fieldset
+                    aria-hidden="true"
+                    class="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+                  >
+                    <legend
+                      class="css-1ftyaf0"
+                    >
+                      <span>
+                        Email
+                         
+                        *
+                      </span>
+                    </legend>
+                  </fieldset>
+                </div>
+              </div>
+              <button
+                class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButtonBase-root  css-sghohy-MuiButtonBase-root-MuiButton-root"
+                tabindex="0"
+                type="button"
+              >
+                Early Access
+                <span
+                  class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </form>
+          <p>
+            Already have a beta account?
+             
+            <span
+              class="underline text-blue-500 cursor-pointer"
+              href="/api/auth/login"
+            >
+              Sign in
+            </span>
+          </p>
+        </div>
+        <div
+          class="col-span-2"
+        >
+          <div
+            class="hidden md:block"
+          >
+            <div
+              class="w-full bg-cover css-1pjj8rt"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
