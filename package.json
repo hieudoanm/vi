@@ -22,7 +22,7 @@
     "test": "yarn test:api && yarn test:web"
   },
   "dependencies": {
-    "concurrently": "7.2.0"
+    "concurrently": "7.2.2"
   },
   "devDependencies": {
     "husky": "8.0.1",
