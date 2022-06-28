@@ -33,7 +33,7 @@
     "pino": "7.11.0",
     "redis": "4.1.0",
     "swagger-ui-express": "4.4.0",
-    "tsoa": "3.14.1"
+    "tsoa": "4.1.0"
   },
   "devDependencies": {
     "@types/cookie-parser": "1.4.3",
