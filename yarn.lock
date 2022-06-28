@@ -766,6 +766,26 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@ethersproject/bytes@^5.6.1":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@ethersproject/bytes/-/bytes-5.6.1.tgz#24f916e411f82a8a60412344bf4a813b917eefe7"
+  integrity sha512-NwQt7cKn5+ZE4uDn+X5RAXLp46E1chXoaMmrxAyA0rblpxz8t58lVkrHXoRIn0lz1joQElQ8410GqhTqMOwc6g==
+  dependencies:
+    "@ethersproject/logger" "^5.6.0"
+
+"@ethersproject/logger@^5.6.0":
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/@ethersproject/logger/-/logger-5.6.0.tgz#d7db1bfcc22fd2e4ab574cba0bb6ad779a9a3e7a"
+  integrity sha512-BiBWllUROH9w+P21RzoxJKzqoqpkyM1pRnEKG69bulE9TSQD8SAIvTQqIMZmmCO8pUNkgLP1wndX1gKghSpBmg==
+
+"@ethersproject/rlp@^5.6.0":
+  version "5.6.1"
+  resolved "https://registry.yarnpkg.com/@ethersproject/rlp/-/rlp-5.6.1.tgz#df8311e6f9f24dcb03d59a2bac457a28a4fe2bd8"
+  integrity sha512-uYjmcZx+DKlFUk7a5/W9aQVaoEC7+1MOBgNtvNg13+RnuUwT4F0zTovC0tmay5SmRslb29V1B7Y5KCri46WhuQ==
+  dependencies:
+    "@ethersproject/bytes" "^5.6.1"
+    "@ethersproject/logger" "^5.6.0"
+
 "@graphql-tools/merge@8.2.11":
   version "8.2.11"
   resolved "https://registry.yarnpkg.com/@graphql-tools/merge/-/merge-8.2.11.tgz#0cdc6c9feb32e3392bf0c633881a78ccc1d24368"
@@ -806,7 +826,7 @@
   resolved "https://registry.yarnpkg.com/@graphql-typed-document-node/core/-/core-3.1.1.tgz#076d78ce99822258cf813ecc1e7fa460fa74d052"
   integrity sha512-NQ17ii0rK1b34VZonlmT2QMJFI70m0TRwbknO/ihlbatXyaktDhN/98vBiUU6kNBPljqGqyIrl2T4nY2RpFANg==
 
-"@grpc/grpc-js@^1.6.3":
+"@grpc/grpc-js@^1.6.7":
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/@grpc/grpc-js/-/grpc-js-1.6.7.tgz#4c4fa998ff719fe859ac19fe977fdef097bb99aa"
   integrity sha512-eBM03pu9hd3VqDQG+kHahiG1x80RGkkqqRb1Pchcwqej/KkAH95gAvKs6laqaHCycYaPK+TKuNQnOz9UXYA8qw==
@@ -837,36 +857,36 @@
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
-"@hashgraph/cryptography@^1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@hashgraph/cryptography/-/cryptography-1.1.2.tgz#bd2ca9e8f91ab21155f0eb230a58e3e7d45d7982"
-  integrity sha512-oSnDDs5foNq6Yni4kCwbA01NuVY2mewVr1jhkJG7yNDT6+xIBCztRWDeINb1JuShXe57Cuf88M1zmN5iFN7JgA==
+"@hashgraph/cryptography@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@hashgraph/cryptography/-/cryptography-1.3.0.tgz#2c2f55d80c91cf63b8e297ca237dc1288c52a0f5"
+  integrity sha512-nyNXVNy58iFcr9DqgNdPWDVLK631mvkUYesoiJEZZ1/Pzhw0lP8nt4YnXZeflsr52sjSy0+uxJSJoHv3rTdJRQ==
   dependencies:
     bignumber.js "^9.0.2"
     crypto-js "^4.1.1"
     elliptic "^6.5.4"
-    expo-crypto "^10.1.2"
-    expo-random "^12.1.2"
     js-base64 "^3.7.2"
     tweetnacl "^1.0.3"
     utf8 "^3.0.0"
 
-"@hashgraph/proto@2.4.0":
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/@hashgraph/proto/-/proto-2.4.0.tgz#95cbe3d6eb36eb9dc4befda7e4aa9425f3f269aa"
-  integrity sha512-GZf/UPkJVjSCJRR+fYXppYllGeG2GYgwRSnkx9FUBlsWrlHMW8zQZhPrIgclM7ukepI1DWbMaNbmdeziSTzeUQ==
+"@hashgraph/proto@2.5.0":
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/@hashgraph/proto/-/proto-2.5.0.tgz#d16f5df307410a46bbb7112e162f849395d8fe36"
+  integrity sha512-354Ozgf55mdPUUcED5E8n2ehGMO6mpOgtMIo4l4+t/wpp1qRmOfbHlVfI4TQN7W4WMb/CRnmbjCl6KDF/SnTxA==
   dependencies:
     long "^4.0.0"
     protobufjs "^6.11.2"
 
-"@hashgraph/sdk@2.13.1":
-  version "2.13.1"
-  resolved "https://registry.yarnpkg.com/@hashgraph/sdk/-/sdk-2.13.1.tgz#7f7c5b0ccfef4a0a7377d5007529d3240cdeea36"
-  integrity sha512-XTBuCZ38pMJaY8C46cZNq8Rc/nMsuMvBJaYnYaYmOP0rsKf3GBzf5Byydy4u3A0ynXCV8NxCloy71wgp0w//PA==
+"@hashgraph/sdk@2.16.2":
+  version "2.16.2"
+  resolved "https://registry.yarnpkg.com/@hashgraph/sdk/-/sdk-2.16.2.tgz#f90e9b24ee214e13c3b73af5a64e28b0a5e744b4"
+  integrity sha512-WCJ46Z2E+8h/3LbBVsiWtgi92+aquCIUJsS+DbNzvHTRtO7vcLiRMA0xLDa2qgcl3rQh1H1pCV80bAW8bn3kVQ==
   dependencies:
-    "@grpc/grpc-js" "^1.6.3"
-    "@hashgraph/cryptography" "^1.1.2"
-    "@hashgraph/proto" "2.4.0"
+    "@ethersproject/rlp" "^5.6.0"
+    "@grpc/grpc-js" "^1.6.7"
+    "@hashgraph/cryptography" "^1.3.0"
+    "@hashgraph/proto" "2.5.0"
+    axios "^0.27.2"
     bignumber.js "^9.0.2"
     crypto-js "^4.1.1"
     js-base64 "^3.7.2"
@@ -2618,6 +2638,14 @@ axios@0.26.1:
   dependencies:
     follow-redirects "^1.14.8"
 
+axios@^0.27.2:
+  version "0.27.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.27.2.tgz#207658cc8621606e586c85db4b41a750e756d972"
+  integrity sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==
+  dependencies:
+    follow-redirects "^1.14.9"
+    form-data "^4.0.0"
+
 axobject-query@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
@@ -2708,7 +2736,7 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
-base64-js@^1.3.0, base64-js@^1.3.1:
+base64-js@^1.3.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
@@ -4058,18 +4086,6 @@ expect@^27.5.1:
     jest-matcher-utils "^27.5.1"
     jest-message-util "^27.5.1"
 
-expo-crypto@^10.1.2:
-  version "10.2.0"
-  resolved "https://registry.yarnpkg.com/expo-crypto/-/expo-crypto-10.2.0.tgz#86d16e7e93b62af37d9ded3d344744e94d6ab4e4"
-  integrity sha512-YVFp+DJXBtt4t6oZXepnzb+xwpKzFbXn3B9Oma1Tfh6J0rIlm/I20UW/5apdvEdbj44fxJ5DsiZeyADI3bcZkQ==
-
-expo-random@^12.1.2:
-  version "12.2.0"
-  resolved "https://registry.yarnpkg.com/expo-random/-/expo-random-12.2.0.tgz#a3c8a9ce84ef2c85900131d96eea6c7123285482"
-  integrity sha512-SihCGLmDyDOALzBN8XXpz2hCw0RSx9c4/rvjcS4Bfqhw6luHjL2rHNTLrFYrPrPRmG1jHM6dXXJe/Zm8jdu+2g==
-  dependencies:
-    base64-js "^1.3.0"
-
 express@4.18.1:
   version "4.18.1"
   resolved "https://registry.yarnpkg.com/express/-/express-4.18.1.tgz#7797de8b9c72c857b9cd0e14a5eea80666267caf"
@@ -4238,10 +4254,24 @@ follow-redirects@^1.14.8:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.0.tgz#06441868281c86d0dda4ad8bdaead2d02dca89d4"
   integrity sha512-aExlJShTV4qOUOL7yF1U5tvLCB0xQuudbf6toyYA0E/acBNw71mvjFTnLaRp50aQaYocMR0a/RMMBIHeZnGyjQ==
 
+follow-redirects@^1.14.9:
+  version "1.15.1"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.1.tgz#0ca6a452306c9b276e4d3127483e29575e207ad5"
+  integrity sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA==
+
 form-data@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/form-data/-/form-data-3.0.1.tgz#ebd53791b78356a99af9a300d4282c4d5eb9755f"
   integrity sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==
+  dependencies:
+    asynckit "^0.4.0"
+    combined-stream "^1.0.8"
+    mime-types "^2.1.12"
+
+form-data@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/form-data/-/form-data-4.0.0.tgz#93919daeaf361ee529584b9b31664dc12c9fa452"
+  integrity sha512-ETEklSGi5t0QMZuiXoA/Q6vcnxcLQP5vdugSpuAyi6SVGi2clPPp+xgEhuMaHC+zGgn31Kd235W35f7Hykkaww==
   dependencies:
     asynckit "^0.4.0"
     combined-stream "^1.0.8"
