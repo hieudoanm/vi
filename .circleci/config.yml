@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: node:16
+      - image: node:18
     working_directory: ~/vi/packages/api
     steps:
       - checkout
@@ -21,7 +21,7 @@ jobs:
           destination: build
   test:
     docker:
-      - image: node:16
+      - image: node:18
     working_directory: ~/vi/packages/api
     steps:
       - checkout
