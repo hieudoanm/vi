@@ -19,8 +19,8 @@
   },
   "dependencies": {
     "@hashgraph/sdk": "^2.11.3",
-    "apollo-server-core": "^3.6.7",
-    "apollo-server-express": "^3.6.7",
+    "apollo-server-core": "3.7.0",
+    "apollo-server-express": "3.7.0",
     "axios": "^0.26.0",
     "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.6",
