@@ -31,7 +31,7 @@
     "lodash": "4.17.21",
     "mongoose": "6.4.1",
     "pino": "8.1.0",
-    "redis": "4.1.0",
+    "redis": "4.1.1",
     "swagger-ui-express": "4.4.0",
     "tsoa": "4.1.0"
   },
