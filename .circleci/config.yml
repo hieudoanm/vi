@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       - image: node:16
-    working_directory: ~/vi/packages/api
+    working_directory: ~/vi
     steps:
       - checkout
       - run:
@@ -13,16 +13,13 @@ jobs:
       - run:
           name: 'Build Production'
           command: yarn build
-      - run:
-          name: 'Check Files & Folder'
-          command: pwd && ls -la
       - store_artifacts:
           path: ./dist
           destination: build
   test:
     docker:
       - image: node:16
-    working_directory: ~/vi/packages/api
+    working_directory: ~/vi
     steps:
       - checkout
       - run:
@@ -31,9 +28,6 @@ jobs:
       - run:
           name: 'Unit Tests'
           command: yarn test
-      - run:
-          name: 'Check Files & Folder'
-          command: pwd && ls -la
       - store_test_results:
           path: ./coverage
           destination: tests
@@ -42,7 +36,10 @@ workflows:
   version: 2
   build_test:
     jobs:
-      - build
+      - build:
+          filters:
+            branches:
+              only: master
       - test:
           requires:
             - build
