@@ -750,7 +750,7 @@
   resolved "https://registry.yarnpkg.com/@ethersproject/logger/-/logger-5.6.0.tgz#d7db1bfcc22fd2e4ab574cba0bb6ad779a9a3e7a"
   integrity sha512-BiBWllUROH9w+P21RzoxJKzqoqpkyM1pRnEKG69bulE9TSQD8SAIvTQqIMZmmCO8pUNkgLP1wndX1gKghSpBmg==
 
-"@ethersproject/rlp@^5.6.0":
+"@ethersproject/rlp@^5.6.1":
   version "5.6.1"
   resolved "https://registry.yarnpkg.com/@ethersproject/rlp/-/rlp-5.6.1.tgz#df8311e6f9f24dcb03d59a2bac457a28a4fe2bd8"
   integrity sha512-uYjmcZx+DKlFUk7a5/W9aQVaoEC7+1MOBgNtvNg13+RnuUwT4F0zTovC0tmay5SmRslb29V1B7Y5KCri46WhuQ==
@@ -849,12 +849,12 @@
     long "^4.0.0"
     protobufjs "^6.11.2"
 
-"@hashgraph/sdk@2.16.4":
-  version "2.16.4"
-  resolved "https://registry.yarnpkg.com/@hashgraph/sdk/-/sdk-2.16.4.tgz#e54691a8d6676394978048497c5480922386cf0f"
-  integrity sha512-tjh+nEI1AJZxp84vDM0ncYQwHxOhn7xwW6piUiKKiiTQ0AchBnPMG4ZMiuPqVMpEXePKH0gfyjY2AusQdQco/w==
+"@hashgraph/sdk@2.16.6":
+  version "2.16.6"
+  resolved "https://registry.yarnpkg.com/@hashgraph/sdk/-/sdk-2.16.6.tgz#379e4ef540a03bab5decf328dd4475b7d93adf1f"
+  integrity sha512-cfIGOTf9cReP3l+w3P/cinnlmlGTyCt5TdmNpeWXJc5zrWimK2TJra6WDcfC8hzMFKOV0qI2Ka1YJk54hR8Yfg==
   dependencies:
-    "@ethersproject/rlp" "^5.6.0"
+    "@ethersproject/rlp" "^5.6.1"
     "@grpc/grpc-js" "^1.6.7"
     "@hashgraph/cryptography" "^1.3.0"
     "@hashgraph/proto" "2.5.0"
@@ -864,7 +864,7 @@
     js-base64 "^3.7.2"
     js-logger "^1.6.1"
     long "^4.0.0"
-    protobufjs "^6.11.2"
+    protobufjs "^6.11.3"
     utf8 "^3.0.0"
 
 "@headlessui/react@1.6.5":
@@ -6474,6 +6474,25 @@ protobufjs@^6.10.0, protobufjs@^6.11.2:
   version "6.11.2"
   resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.2.tgz#de39fabd4ed32beaa08e9bb1e30d08544c1edf8b"
   integrity sha512-4BQJoPooKJl2G9j3XftkIXjoC9C0Av2NOrWmbLWT1vH32GcSUHjM0Arra6UfTsVyfMAuFzaLucXn1sadxJydAw==
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.2"
+    "@protobufjs/base64" "^1.1.2"
+    "@protobufjs/codegen" "^2.0.4"
+    "@protobufjs/eventemitter" "^1.1.0"
+    "@protobufjs/fetch" "^1.1.0"
+    "@protobufjs/float" "^1.0.2"
+    "@protobufjs/inquire" "^1.1.0"
+    "@protobufjs/path" "^1.1.2"
+    "@protobufjs/pool" "^1.1.0"
+    "@protobufjs/utf8" "^1.1.0"
+    "@types/long" "^4.0.1"
+    "@types/node" ">=13.7.0"
+    long "^4.0.0"
+
+protobufjs@^6.11.3:
+  version "6.11.3"
+  resolved "https://registry.yarnpkg.com/protobufjs/-/protobufjs-6.11.3.tgz#637a527205a35caa4f3e2a9a4a13ddffe0e7af74"
+  integrity sha512-xL96WDdCZYdU7Slin569tFX712BxsxslWwAfAhCYjQKGTq7dAU91Lomy6nLLhh/dyGhk/YH4TwTSRxTzhuHyZg==
   dependencies:
     "@protobufjs/aspromise" "^1.1.2"
     "@protobufjs/base64" "^1.1.2"
