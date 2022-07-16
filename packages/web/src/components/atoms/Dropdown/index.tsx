@@ -1,7 +1,6 @@
 import { Menu, Transition } from '@headlessui/react';
 import Button from '@mui/material/Button';
 import React, { Fragment } from 'react';
-import { uuid } from '../../../utils/uuid';
 import Item, { ItemProps } from './Item';
 
 export type DropdownProps = {
@@ -31,12 +30,7 @@ const Dropdown: React.FC<DropdownProps> = ({
           {items.map((item: ItemProps) => {
             const { href = '', icon = <></>, text = '' } = item;
             return (
-              <Item
-                key={`item-${uuid()}`}
-                href={href}
-                icon={icon}
-                text={text}
-              />
+              <Item key={`item-${href}`} href={href} icon={icon} text={text} />
             );
           })}
         </Menu.Items>

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Container from '@mui/material/Container';
 
-export type PageHeaderProps = { className?: string; title?: string };
+export type PageHeaderProps = { children?: ReactNode; title?: string };
 
 export const PageHeader: React.FC<PageHeaderProps> = ({
   title = '',
-  children = '',
+  children = <></>,
 }) => {
   return (
     <div className="py-12 border-b">
@@ -20,6 +20,6 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
 };
 
 PageHeader.displayName = 'PageHeader';
-PageHeader.defaultProps = { title: '' };
+PageHeader.defaultProps = { title: '', children: <></> };
 
 export default PageHeader;

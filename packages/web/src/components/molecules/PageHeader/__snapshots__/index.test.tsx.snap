@@ -14,7 +14,7 @@ exports[`PageHeader render default 1`] = `
         <h1
           class="text-4xl uppercase"
         />
-        
+        <div />
       </div>
     </div>
   </div>

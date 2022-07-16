@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import React from 'react';
-import { uuid } from '../../../utils/uuid';
 
 export type MenuProps = {
   active: string;
@@ -20,7 +19,7 @@ const Menu: React.FC<MenuProps> = ({ active = '', links = [] }) => {
           const activeClass =
             active === text ? 'bg-black text-white font-semibold' : '';
           return (
-            <div key={`link-${uuid()}`} className={`${border} ${activeClass}`}>
+            <div key={`link-${href}`} className={`${border} ${activeClass}`}>
               <Link href={href} passHref>
                 <div className="text-center py-2 uppercase cursor-pointer">
                   {text}

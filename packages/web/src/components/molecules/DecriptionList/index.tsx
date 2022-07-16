@@ -1,5 +1,4 @@
 import React from 'react';
-import { uuid } from '../../../utils/uuid';
 import List from '../../atoms/List';
 
 export type DescriptionItem = {
@@ -17,7 +16,7 @@ const DescriptionList: React.FC<DescriptionListProps> = ({ items = [] }) => {
       {items.map((item: DescriptionItem) => {
         const { term = '', description = '' } = item;
         return (
-          <List.Item key={`item-${uuid()}`}>
+          <List.Item key={`item-${term}`}>
             <div className="grid grid-cols-1 md:grid-cols-3">
               <div className="col-span-1">
                 <p className="truncate uppercase">{term}</p>

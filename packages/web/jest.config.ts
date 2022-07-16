@@ -1,4 +1,4 @@
-const nextJest = require('next/jest');
+import nextJest from 'next/jest';
 
 const createJestConfig = nextJest({
   // Provide the path to your Next.js app to load next.config.js and .env files in your test environment
@@ -15,13 +15,14 @@ const customJestConfig = {
     '<rootDir>/src/**',
     '!<rootDir>/src/**/*.test.ts',
     '!<rootDir>/src/**/*.test.tsx',
+    '!<rootDir>/src/**/*.test.tsx.snap',
   ],
   coverageThreshold: {
     global: {
-      branches: 90,
-      functions: 90,
-      lines: 90,
-      statements: 90,
+      branches: 10,
+      functions: 30,
+      lines: 30,
+      statements: 30,
     },
   },
   moduleDirectories: ['node_modules', '<rootDir>/'],
@@ -29,4 +30,4 @@ const customJestConfig = {
 };
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
-module.exports = createJestConfig(customJestConfig);
+export default createJestConfig(customJestConfig);

@@ -1,16 +1,17 @@
 import Head from 'next/head';
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Container from '@mui/material/Container';
 import PageHeader from '../../molecules/PageHeader';
 import Appsbar from '../../organisms/Appsbar';
 
 export type AppsTemplateProps = {
   title?: string;
+  children?: ReactNode;
 };
 
 const AppsTemplate: React.FC<AppsTemplateProps> = ({
   title = '',
-  children,
+  children = <></>,
 }) => {
   return (
     <>
@@ -27,6 +28,6 @@ const AppsTemplate: React.FC<AppsTemplateProps> = ({
 };
 
 AppsTemplate.displayName = 'AppsTemplate';
-AppsTemplate.defaultProps = { title: '' };
+AppsTemplate.defaultProps = { title: '', children: <></> };
 
 export default AppsTemplate;
