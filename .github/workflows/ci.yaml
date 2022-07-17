@@ -2,7 +2,11 @@ name: Deploy
 
 on:
   push:
-    branches: [master]
+    branches:
+      - master
+      - 'hotfix/**'
+      - 'feature/**'
+      - 'renovate/**'
 
 jobs:
   github-actions:
@@ -20,7 +24,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install Dependencies
-        run: yarn install
+        run: yarn install --network-timeout 86400000
       - name: Build Production
         run: yarn build
       - name: Unit Test
