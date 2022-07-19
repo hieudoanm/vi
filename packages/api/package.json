@@ -22,7 +22,7 @@
     "docker:start": "docker run -p 8080:8080 data:latest"
   },
   "dependencies": {
-    "@hashgraph/sdk": "2.16.6",
+    "@hashgraph/sdk": "2.17.0",
     "apollo-server-core": "3.10.0",
     "apollo-server-express": "3.10.0",
     "axios": "0.27.2",
