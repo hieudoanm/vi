@@ -1,0 +1,647 @@
+{
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {
+			"Coin": {
+				"properties": {
+					"btcPrice": {
+						"type": "string"
+					},
+					"coinrankingUrl": {
+						"type": "string"
+					},
+					"lowVolume": {
+						"type": "boolean"
+					},
+					"sparkline": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"rank": {
+						"type": "number",
+						"format": "double"
+					},
+					"change": {
+						"type": "string"
+					},
+					"tier": {
+						"type": "number",
+						"format": "double"
+					},
+					"listedAt": {
+						"type": "number",
+						"format": "double"
+					},
+					"price": {
+						"type": "string"
+					},
+					"marketCap": {
+						"type": "string"
+					},
+					"iconUrl": {
+						"type": "string"
+					},
+					"color": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"symbol": {
+						"type": "string"
+					},
+					"uuid": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"btcPrice",
+					"coinrankingUrl",
+					"lowVolume",
+					"sparkline",
+					"rank",
+					"change",
+					"tier",
+					"listedAt",
+					"price",
+					"marketCap",
+					"iconUrl",
+					"color",
+					"name",
+					"symbol",
+					"uuid"
+				],
+				"type": "object"
+			},
+			"Currency": {
+				"properties": {
+					"exponent": {
+						"type": "number",
+						"format": "double"
+					},
+					"tokenName": {
+						"type": "string"
+					},
+					"tokenCode": {
+						"type": "string"
+					},
+					"tokenId": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"code": {
+						"type": "string"
+					},
+					"symbol": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"exponent",
+					"tokenName",
+					"tokenCode",
+					"tokenId",
+					"name",
+					"code",
+					"symbol"
+				],
+				"type": "object"
+			},
+			"Rate": {
+				"properties": {
+					"rate": {
+						"type": "number",
+						"format": "double"
+					},
+					"symbol": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"rate",
+					"symbol"
+				],
+				"type": "object"
+			},
+			"AccountType": {
+				"properties": {
+					"privateKey": {
+						"type": "string"
+					},
+					"publicKey": {
+						"type": "string"
+					},
+					"accountId": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"privateKey",
+					"publicKey",
+					"accountId",
+					"email"
+				],
+				"type": "object"
+			},
+			"Balance": {
+				"properties": {
+					"balance": {
+						"type": "number",
+						"format": "double"
+					},
+					"name": {
+						"type": "string"
+					},
+					"symbol": {
+						"type": "string"
+					}
+				},
+				"type": "object"
+			},
+			"Receipt": {
+				"properties": {
+					"cents": {
+						"type": "number",
+						"format": "double"
+					},
+					"hbars": {
+						"type": "number",
+						"format": "double"
+					},
+					"tokenId": {
+						"type": "string"
+					},
+					"accountId": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"cents",
+					"hbars",
+					"tokenId",
+					"accountId"
+				],
+				"type": "object"
+			},
+			"TopUpRequestBody": {
+				"properties": {
+					"tokenId": {
+						"type": "string"
+					},
+					"email": {
+						"type": "string"
+					},
+					"amount": {
+						"type": "number",
+						"format": "double"
+					}
+				},
+				"required": [
+					"email",
+					"amount"
+				],
+				"type": "object"
+			},
+			"TransferRequestBody": {
+				"properties": {
+					"tokenId": {
+						"type": "string"
+					},
+					"toEmail": {
+						"type": "string"
+					},
+					"fromEmail": {
+						"type": "string"
+					},
+					"amount": {
+						"type": "number",
+						"format": "double"
+					}
+				},
+				"required": [
+					"toEmail",
+					"fromEmail",
+					"amount"
+				],
+				"type": "object"
+			}
+		},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "api",
+		"version": "0.0.1",
+		"description": "API",
+		"license": {
+			"name": "MIT"
+		},
+		"contact": {
+			"name": "hieudoanm ",
+			"email": "hieumdoan@gmail.com"
+		}
+	},
+	"openapi": "3.0.0",
+	"paths": {
+		"/crypto/coins": {
+			"get": {
+				"operationId": "GetCoins",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"data": {
+											"items": {
+												"$ref": "#/components/schemas/Coin"
+											},
+											"type": "array"
+										},
+										"total": {
+											"type": "number",
+											"format": "double"
+										}
+									},
+									"required": [
+										"data",
+										"total"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Crypto"
+				],
+				"security": [],
+				"parameters": []
+			}
+		},
+		"/forex": {
+			"get": {
+				"operationId": "GetCurrencies",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"data": {
+											"items": {
+												"$ref": "#/components/schemas/Currency"
+											},
+											"type": "array"
+										},
+										"total": {
+											"type": "number",
+											"format": "double"
+										}
+									},
+									"required": [
+										"data",
+										"total"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
+		},
+		"/forex/rates": {
+			"get": {
+				"operationId": "GetRates",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"items": {
+										"$ref": "#/components/schemas/Rate"
+									},
+									"type": "array"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "amount",
+						"required": false,
+						"schema": {
+							"default": 1,
+							"format": "double",
+							"type": "number"
+						}
+					},
+					{
+						"in": "query",
+						"name": "base",
+						"required": false,
+						"schema": {
+							"default": "VND",
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/forex/convert": {
+			"get": {
+				"operationId": "ConvertRates",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"items": {
+										"$ref": "#/components/schemas/Rate"
+									},
+									"type": "array"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "amount",
+						"required": false,
+						"schema": {
+							"default": 1,
+							"format": "double",
+							"type": "number"
+						}
+					},
+					{
+						"in": "query",
+						"name": "base",
+						"required": false,
+						"schema": {
+							"default": "VND",
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/hedera/account": {
+			"get": {
+				"operationId": "GetAccount",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"account": {
+											"$ref": "#/components/schemas/AccountType"
+										}
+									},
+									"required": [
+										"account"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "email",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			},
+			"post": {
+				"operationId": "PostAccount",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"account": {
+											"allOf": [
+												{
+													"$ref": "#/components/schemas/AccountType"
+												}
+											],
+											"nullable": true
+										}
+									},
+									"required": [
+										"account"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"properties": {
+									"email": {
+										"type": "string"
+									}
+								},
+								"required": [
+									"email"
+								],
+								"type": "object"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/hedera/token": {
+			"get": {
+				"operationId": "GetToken",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"token": {}
+									},
+									"required": [
+										"token"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "tokenId",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/hedera/balance": {
+			"get": {
+				"operationId": "GetBalance",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"balance": {
+											"$ref": "#/components/schemas/Balance"
+										}
+									},
+									"required": [
+										"balance"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "email",
+						"required": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				]
+			}
+		},
+		"/hedera/top-up": {
+			"post": {
+				"operationId": "TopUp",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"receipt": {
+											"$ref": "#/components/schemas/Receipt"
+										}
+									},
+									"required": [
+										"receipt"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/TopUpRequestBody"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/hedera/transfer": {
+			"post": {
+				"operationId": "PostTransfer",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"properties": {
+										"receipt": {
+											"$ref": "#/components/schemas/Receipt"
+										}
+									},
+									"required": [
+										"receipt"
+									],
+									"type": "object"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/TransferRequestBody"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "/"
+		}
+	]
+}

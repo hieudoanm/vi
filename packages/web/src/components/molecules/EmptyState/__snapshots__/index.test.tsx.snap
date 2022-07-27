@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EmptyState render default 1`] = `
+<div>
+  <div
+    class="rounded-lg border border-dashed p-8"
+  >
+    <div
+      class="text-center pb-8"
+    >
+      <h3
+        class="font-semibold text-2xl uppercase"
+      >
+        title
+      </h3>
+      <p
+        class="text-gray-500"
+      >
+        description
+      </p>
+    </div>
+    <button
+      class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root  css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      name=""
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+      />
+    </button>
+  </div>
+</div>
+`;

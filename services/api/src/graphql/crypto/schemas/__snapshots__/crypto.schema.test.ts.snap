@@ -1,0 +1,314 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`crypto schemas should match snapshot 1`] = `
+Object {
+  "definitions": Array [
+    Object {
+      "directives": Array [],
+      "fields": Array [
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "coins",
+          },
+          "type": Object {
+            "kind": "ListType",
+            "type": Object {
+              "kind": "NamedType",
+              "name": Object {
+                "kind": "Name",
+                "value": "Coin",
+              },
+            },
+          },
+        },
+      ],
+      "interfaces": Array [],
+      "kind": "ObjectTypeExtension",
+      "name": Object {
+        "kind": "Name",
+        "value": "Query",
+      },
+    },
+    Object {
+      "description": undefined,
+      "directives": Array [],
+      "fields": Array [
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "uuid",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "symbol",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "name",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "color",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "iconUrl",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "marketCap",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "price",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "listedAt",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "Int",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "tier",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "Int",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "change",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "rank",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "Int",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "sparkline",
+          },
+          "type": Object {
+            "kind": "ListType",
+            "type": Object {
+              "kind": "NamedType",
+              "name": Object {
+                "kind": "Name",
+                "value": "String",
+              },
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "coinrankingUrl",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "btcPrice",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "String",
+            },
+          },
+        },
+        Object {
+          "arguments": Array [],
+          "description": undefined,
+          "directives": Array [],
+          "kind": "FieldDefinition",
+          "name": Object {
+            "kind": "Name",
+            "value": "lowVolume",
+          },
+          "type": Object {
+            "kind": "NamedType",
+            "name": Object {
+              "kind": "Name",
+              "value": "Boolean",
+            },
+          },
+        },
+      ],
+      "interfaces": Array [],
+      "kind": "ObjectTypeDefinition",
+      "name": Object {
+        "kind": "Name",
+        "value": "Coin",
+      },
+    },
+  ],
+  "kind": "Document",
+  "loc": Object {
+    "end": 355,
+    "start": 0,
+  },
+}
+`;

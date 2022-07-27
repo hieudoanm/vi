@@ -1,0 +1,30 @@
+name: Docs
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  github-actions:
+    strategy:
+      matrix:
+        node-version: [16.x]
+        os: [ubuntu-latest]
+    name: Node.js ${{ matrix.node-version }} ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Redoc CLI
+        run: yarn global add redoc-cli
+      - name: Bundle Docs
+        run: redoc-cli bundle ./src/swagger.json --output ./docs/index.html --title "Atomic Data API"
+      - name: Deploy GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages
+          folder: docs

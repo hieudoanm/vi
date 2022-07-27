@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CTA render default 1`] = `
+<div>
+  <section
+    class="bg-cyan-50 py-20 css-9ptmzd"
+  >
+    <div
+      class="flex flex-col justify-center items-center pt-20 pb-10"
+    >
+      <h1
+        class="text-center mx-auto mb-8 text-4xl font-bold"
+      >
+        Be the first to get the beta
+      </h1>
+      <a
+        class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root  css-jh47zj-MuiButtonBase-root-MuiButton-root"
+        href="/api/auth/login"
+        tabindex="0"
+        type="button"
+      >
+        Get early access
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </a>
+      <p
+        class="text-sm font-light pt-4"
+      >
+        No credit card required.
+      </p>
+    </div>
+  </section>
+</div>
+`;

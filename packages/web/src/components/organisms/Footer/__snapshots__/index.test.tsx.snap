@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer render default 1`] = `
+<div>
+  <footer
+    class="bg-white py-20"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="grid grid-cols-4 gap-8"
+      />
+    </div>
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg pt-12 css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="font-extrabold tracking-widest"
+      >
+        VI
+      </div>
+    </div>
+  </footer>
+</div>
+`;

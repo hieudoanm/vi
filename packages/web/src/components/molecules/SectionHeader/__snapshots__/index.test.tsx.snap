@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SectionHeader render default 1`] = `
+<div>
+  <div
+    class="pb-8"
+  >
+    <h2
+      class="uppercase text-2xl"
+    />
+  </div>
+</div>
+`;

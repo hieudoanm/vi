@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DescriptionList render default 1`] = `
+<div>
+  <div
+    class="overflow-hidden rounded-lg border shadow"
+  />
+</div>
+`;

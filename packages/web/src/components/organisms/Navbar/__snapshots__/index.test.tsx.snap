@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar render default 1`] = `
+<div>
+  <nav
+    class="md:py-6 py-4 w-full fixed z-10 bg-cyan-50 transition-all css-m0z1ly"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-1oqqzyl-MuiContainer-root"
+    >
+      <div
+        class="flex justify-between items-center"
+      >
+        <div
+          class="font-extrabold tracking-widest text-black"
+        >
+          VI
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+`;
