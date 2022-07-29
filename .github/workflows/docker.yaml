@@ -1,0 +1,31 @@
+name: Docker
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  github-actions:
+    strategy:
+      matrix:
+        node-version: [16.x]
+        os: [ubuntu-latest]
+    name: Node.js ${{ matrix.node-version }} ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Update Tools
+        run: sudo apt-get update && sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+      - name: Add Repository
+        run: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+      - name: Install Docker
+        run: sudo apt-get update && sudo apt-get install docker-ce
+      - name: API - Docker Build
+        run: docker build . --no-cache
+        working-directory: ./services/api
